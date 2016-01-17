@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0B3DD281C0BB7FC00B2B990 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B3DD271C0BB7FC00B2B990 /* ViewController.swift */; };
+		D0C55FB91C0BABDA0078F96C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C55FB81C0BABDA0078F96C /* AppDelegate.swift */; };
+		D0C55FBB1C0BABDA0078F96C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C55FBA1C0BABDA0078F96C /* ViewController.swift */; };
+		D0C55FBE1C0BABDA0078F96C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C55FBC1C0BABDA0078F96C /* Main.storyboard */; };
+		D0C55FC01C0BABDA0078F96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C55FBF1C0BABDA0078F96C /* Assets.xcassets */; };
+		D0C55FC31C0BABDA0078F96C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C55FC11C0BABDA0078F96C /* LaunchScreen.storyboard */; };
+		D0C55FC81C0BABDA0078F96C /* touchPass WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0C55FC71C0BABDA0078F96C /* touchPass WatchKit App.app */; };
+		D0C55FCE1C0BABDA0078F96C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C55FCC1C0BABDA0078F96C /* Interface.storyboard */; };
+		D0C55FD01C0BABDA0078F96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C55FCF1C0BABDA0078F96C /* Assets.xcassets */; };
+		D0C55FD71C0BABDA0078F96C /* touchPass WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0C55FD61C0BABDA0078F96C /* touchPass WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0C55FDE1C0BABDA0078F96C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C55FDD1C0BABDA0078F96C /* ExtensionDelegate.swift */; };
+		D0C55FE01C0BABDA0078F96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C55FDF1C0BABDA0078F96C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0C55FC91C0BABDA0078F96C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0C55FAD1C0BABDA0078F96C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C55FC61C0BABDA0078F96C;
+			remoteInfo = "touchPass WatchKit App";
+		};
+		D0C55FD81C0BABDA0078F96C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0C55FAD1C0BABDA0078F96C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C55FD51C0BABDA0078F96C;
+			remoteInfo = "touchPass WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0C55FE71C0BABDA0078F96C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0C55FD71C0BABDA0078F96C /* touchPass WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C55FEB1C0BABDA0078F96C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0C55FC81C0BABDA0078F96C /* touchPass WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D0B3DD271C0BB7FC00B2B990 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0C55FB51C0BABDA0078F96C /* touchPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = touchPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C55FB81C0BABDA0078F96C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0C55FBA1C0BABDA0078F96C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0C55FBD1C0BABDA0078F96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0C55FBF1C0BABDA0078F96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0C55FC21C0BABDA0078F96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0C55FC41C0BABDA0078F96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C55FC71C0BABDA0078F96C /* touchPass WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "touchPass WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C55FCD1C0BABDA0078F96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D0C55FCF1C0BABDA0078F96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0C55FD11C0BABDA0078F96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C55FD61C0BABDA0078F96C /* touchPass WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "touchPass WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C55FDD1C0BABDA0078F96C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D0C55FDF1C0BABDA0078F96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0C55FE11C0BABDA0078F96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0C55FB21C0BABDA0078F96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C55FD31C0BABDA0078F96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0C55FAC1C0BABDA0078F96C = {
+			isa = PBXGroup;
+			children = (
+				D0C55FB71C0BABDA0078F96C /* touchPass */,
+				D0C55FCB1C0BABDA0078F96C /* touchPass WatchKit App */,
+				D0C55FDA1C0BABDA0078F96C /* touchPass WatchKit Extension */,
+				D0C55FB61C0BABDA0078F96C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0C55FB61C0BABDA0078F96C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0C55FB51C0BABDA0078F96C /* touchPass.app */,
+				D0C55FC71C0BABDA0078F96C /* touchPass WatchKit App.app */,
+				D0C55FD61C0BABDA0078F96C /* touchPass WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0C55FB71C0BABDA0078F96C /* touchPass */ = {
+			isa = PBXGroup;
+			children = (
+				D0C55FB81C0BABDA0078F96C /* AppDelegate.swift */,
+				D0C55FBA1C0BABDA0078F96C /* ViewController.swift */,
+				D0C55FBC1C0BABDA0078F96C /* Main.storyboard */,
+				D0C55FBF1C0BABDA0078F96C /* Assets.xcassets */,
+				D0C55FC11C0BABDA0078F96C /* LaunchScreen.storyboard */,
+				D0C55FC41C0BABDA0078F96C /* Info.plist */,
+			);
+			path = touchPass;
+			sourceTree = "<group>";
+		};
+		D0C55FCB1C0BABDA0078F96C /* touchPass WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D0C55FCC1C0BABDA0078F96C /* Interface.storyboard */,
+				D0C55FCF1C0BABDA0078F96C /* Assets.xcassets */,
+				D0C55FD11C0BABDA0078F96C /* Info.plist */,
+			);
+			path = "touchPass WatchKit App";
+			sourceTree = "<group>";
+		};
+		D0C55FDA1C0BABDA0078F96C /* touchPass WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0C55FDD1C0BABDA0078F96C /* ExtensionDelegate.swift */,
+				D0C55FDF1C0BABDA0078F96C /* Assets.xcassets */,
+				D0C55FE11C0BABDA0078F96C /* Info.plist */,
+				D0B3DD271C0BB7FC00B2B990 /* ViewController.swift */,
+			);
+			path = "touchPass WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0C55FB41C0BABDA0078F96C /* touchPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C55FEC1C0BABDA0078F96C /* Build configuration list for PBXNativeTarget "touchPass" */;
+			buildPhases = (
+				D0C55FB11C0BABDA0078F96C /* Sources */,
+				D0C55FB21C0BABDA0078F96C /* Frameworks */,
+				D0C55FB31C0BABDA0078F96C /* Resources */,
+				D0C55FEB1C0BABDA0078F96C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0C55FCA1C0BABDA0078F96C /* PBXTargetDependency */,
+			);
+			name = touchPass;
+			productName = touchPass;
+			productReference = D0C55FB51C0BABDA0078F96C /* touchPass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0C55FC61C0BABDA0078F96C /* touchPass WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C55FE81C0BABDA0078F96C /* Build configuration list for PBXNativeTarget "touchPass WatchKit App" */;
+			buildPhases = (
+				D0C55FC51C0BABDA0078F96C /* Resources */,
+				D0C55FE71C0BABDA0078F96C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0C55FD91C0BABDA0078F96C /* PBXTargetDependency */,
+			);
+			name = "touchPass WatchKit App";
+			productName = "touchPass WatchKit App";
+			productReference = D0C55FC71C0BABDA0078F96C /* touchPass WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D0C55FD51C0BABDA0078F96C /* touchPass WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C55FE41C0BABDA0078F96C /* Build configuration list for PBXNativeTarget "touchPass WatchKit Extension" */;
+			buildPhases = (
+				D0C55FD21C0BABDA0078F96C /* Sources */,
+				D0C55FD31C0BABDA0078F96C /* Frameworks */,
+				D0C55FD41C0BABDA0078F96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "touchPass WatchKit Extension";
+			productName = "touchPass WatchKit Extension";
+			productReference = D0C55FD61C0BABDA0078F96C /* touchPass WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0C55FAD1C0BABDA0078F96C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = psr;
+				TargetAttributes = {
+					D0C55FB41C0BABDA0078F96C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D0C55FC61C0BABDA0078F96C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D0C55FD51C0BABDA0078F96C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 5NTGH32874;
+					};
+				};
+			};
+			buildConfigurationList = D0C55FB01C0BABDA0078F96C /* Build configuration list for PBXProject "touchPass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0C55FAC1C0BABDA0078F96C;
+			productRefGroup = D0C55FB61C0BABDA0078F96C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0C55FB41C0BABDA0078F96C /* touchPass */,
+				D0C55FC61C0BABDA0078F96C /* touchPass WatchKit App */,
+				D0C55FD51C0BABDA0078F96C /* touchPass WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0C55FB31C0BABDA0078F96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C55FC31C0BABDA0078F96C /* LaunchScreen.storyboard in Resources */,
+				D0C55FC01C0BABDA0078F96C /* Assets.xcassets in Resources */,
+				D0C55FBE1C0BABDA0078F96C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C55FC51C0BABDA0078F96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C55FD01C0BABDA0078F96C /* Assets.xcassets in Resources */,
+				D0C55FCE1C0BABDA0078F96C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C55FD41C0BABDA0078F96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C55FE01C0BABDA0078F96C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0C55FB11C0BABDA0078F96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C55FBB1C0BABDA0078F96C /* ViewController.swift in Sources */,
+				D0C55FB91C0BABDA0078F96C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C55FD21C0BABDA0078F96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C55FDE1C0BABDA0078F96C /* ExtensionDelegate.swift in Sources */,
+				D0B3DD281C0BB7FC00B2B990 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0C55FCA1C0BABDA0078F96C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C55FC61C0BABDA0078F96C /* touchPass WatchKit App */;
+			targetProxy = D0C55FC91C0BABDA0078F96C /* PBXContainerItemProxy */;
+		};
+		D0C55FD91C0BABDA0078F96C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C55FD51C0BABDA0078F96C /* touchPass WatchKit Extension */;
+			targetProxy = D0C55FD81C0BABDA0078F96C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0C55FBC1C0BABDA0078F96C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0C55FBD1C0BABDA0078F96C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0C55FC11C0BABDA0078F96C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0C55FC21C0BABDA0078F96C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0C55FCC1C0BABDA0078F96C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0C55FCD1C0BABDA0078F96C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0C55FE21C0BABDA0078F96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0C55FE31C0BABDA0078F96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0C55FE51C0BABDA0078F96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "touchPass WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = psr.GestureFlow.touchPass.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D0C55FE61C0BABDA0078F96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "touchPass WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = psr.GestureFlow.touchPass.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D0C55FE91C0BABDA0078F96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = touchPass_WatchKit_Extension;
+				INFOPLIST_FILE = "touchPass WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = psr.GestureFlow.touchPass.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D0C55FEA1C0BABDA0078F96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = touchPass_WatchKit_Extension;
+				INFOPLIST_FILE = "touchPass WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = psr.GestureFlow.touchPass.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D0C55FED1C0BABDA0078F96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = touchPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = psr.GestureFlow.touchPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0C55FEE1C0BABDA0078F96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = touchPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = psr.GestureFlow.touchPass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0C55FB01C0BABDA0078F96C /* Build configuration list for PBXProject "touchPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C55FE21C0BABDA0078F96C /* Debug */,
+				D0C55FE31C0BABDA0078F96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C55FE41C0BABDA0078F96C /* Build configuration list for PBXNativeTarget "touchPass WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C55FE51C0BABDA0078F96C /* Debug */,
+				D0C55FE61C0BABDA0078F96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C55FE81C0BABDA0078F96C /* Build configuration list for PBXNativeTarget "touchPass WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C55FE91C0BABDA0078F96C /* Debug */,
+				D0C55FEA1C0BABDA0078F96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C55FEC1C0BABDA0078F96C /* Build configuration list for PBXNativeTarget "touchPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C55FED1C0BABDA0078F96C /* Debug */,
+				D0C55FEE1C0BABDA0078F96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0C55FAD1C0BABDA0078F96C /* Project object */;
+}

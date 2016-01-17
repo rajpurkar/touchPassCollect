@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="14F1504" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
+    </dependencies>
+    <scenes>
+        <!--test-->
+        <scene sceneID="tNw-cs-elp">
+            <objects>
+                <controller title="test" contentMode="center" hidesWhenLoading="NO" id="Pwc-QF-FxL" customClass="testController" customModule="touchPass_WatchKit_Extension">
+                    <items>
+                        <label width="0.33000000000000002" height="0.10000000000000001" alignment="center" text="X" textAlignment="center" id="jkl-bc-O0l"/>
+                        <label width="0.33000000000000002" height="0.10000000000000001" alignment="center" text="Y" textAlignment="center" id="JR5-M5-8GS"/>
+                        <label width="0.33000000000000002" height="0.10000000000000001" alignment="center" text="Z" textAlignment="center" id="V1u-dL-WKG"/>
+                        <button width="1" height="0.5" alignment="left" title="Button" id="2bE-KO-FxZ">
+                            <color key="backgroundColor" red="1" green="0.1245178238" blue="0.2494311843" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" title="Done"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="Pwc-QF-FxL" id="Dt2-lS-bUU"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="2bE-KO-FxZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="2bE-KO-FxZ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="labelX" destination="jkl-bc-O0l" id="Ozd-xq-1kR"/>
+                        <outlet property="labelY" destination="JR5-M5-8GS" id="XF7-Ye-7BM"/>
+                        <outlet property="labelZ" destination="V1u-dL-WKG" id="Pwt-PA-bBp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="443.74358974358978" y="425.87179487179492"/>
+        </scene>
+        <!--train-->
+        <scene sceneID="J7d-bB-vNA">
+            <objects>
+                <controller title="train" hidesWhenLoading="NO" id="2b9-sF-J5y" customClass="trainController" customModule="touchPass_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="0.10000000000000001" alignment="center" text="Label" textAlignment="center" id="I2D-ae-mVb">
+                            <variation key="device=watch42mm" text="X"/>
+                        </label>
+                        <label width="1" height="0.10000000000000001" alignment="center" text="Label" textAlignment="center" id="Ah1-G8-3fK">
+                            <variation key="device=watch42mm" text="Y"/>
+                        </label>
+                        <label width="1" height="0.10000000000000001" alignment="center" text="Label" textAlignment="center" id="eBQ-3L-QYc">
+                            <variation key="device=watch42mm" text="Z"/>
+                        </label>
+                        <button width="1" height="0.40000000000000002" alignment="left" title="Button" id="eU2-lT-CLj">
+                            <color key="backgroundColor" red="0.2357384733" green="0.93488863950000001" blue="0.428656708" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" title="Done"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="2b9-sF-J5y" id="uvn-yX-Prp"/>
+                            </connections>
+                        </button>
+                        <label width="100" height="100" alignment="left" text="Label" textAlignment="center" id="3hB-RM-0lX">
+                            <variation key="device=watch42mm" height="44.5" text="0" width="156"/>
+                        </label>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="I2D-ae-mVb"/>
+                            <exclude reference="Ah1-G8-3fK"/>
+                            <exclude reference="eBQ-3L-QYc"/>
+                            <exclude reference="eU2-lT-CLj"/>
+                            <exclude reference="3hB-RM-0lX"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="I2D-ae-mVb"/>
+                            <include reference="Ah1-G8-3fK"/>
+                            <include reference="eBQ-3L-QYc"/>
+                            <include reference="eU2-lT-CLj"/>
+                            <include reference="3hB-RM-0lX"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="labelX" destination="I2D-ae-mVb" id="1Ln-RQ-sjj"/>
+                        <outlet property="labelY" destination="Ah1-G8-3fK" id="0qR-tp-JoY"/>
+                        <outlet property="labelZ" destination="eBQ-3L-QYc" id="QWi-EV-wQy"/>
+                        <outlet property="numTrainedPasswordsLabel" destination="3hB-RM-0lX" id="TEo-lZ-iTm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="520.46153846153845" y="-88.487179487179489"/>
+        </scene>
+        <!--main-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="main" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="mainController" customModule="touchPass_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="set" id="GhZ-FZ-vNK">
+                            <color key="backgroundColor" red="0.22405531954912705" green="0.75814361136649877" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="t30-64-T1N" kind="push" id="53j-fr-B2z"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.20000000000000001" alignment="center" verticalAlignment="center" title="test" id="Orp-Qy-pc1">
+                            <color key="backgroundColor" red="1" green="0.19179531715378439" blue="0.24857827384451292" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Pwc-QF-FxL" kind="push" id="UvN-9b-9m7"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Button" id="RXs-M2-pDg">
+                            <color key="backgroundColor" red="0.23573847333411674" green="0.93488863950276246" blue="0.42865670803328648" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" title="train"/>
+                            <connections>
+                                <segue destination="2b9-sF-J5y" kind="push" id="zRf-Zj-XwC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="RXs-M2-pDg"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="RXs-M2-pDg"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="310" y="124"/>
+        </scene>
+        <!--back-->
+        <scene sceneID="1Dt-o7-dWV">
+            <objects>
+                <controller title="back" hidesWhenLoading="NO" id="t30-64-T1N" customClass="setController" customModule="touchPass_WatchKit_Extension">
+                    <items>
+                        <label width="0.33000000000000002" height="0.10000000000000001" alignment="center" text="Label" textAlignment="center" id="3oQ-i8-sA7">
+                            <color key="textColor" red="0.98823997173034905" green="0.98666968266239485" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <variation key="device=watch42mm" text="X"/>
+                        </label>
+                        <label width="0.33000000000000002" height="0.10000000000000001" alignment="center" text="Label" textAlignment="center" id="l5Z-tZ-6KL">
+                            <color key="textColor" red="0.98823997173034905" green="0.98666968266239485" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <variation key="device=watch42mm" text="Y"/>
+                        </label>
+                        <label width="0.33000000000000002" height="0.10000000000000001" alignment="center" text="Label" textAlignment="center" id="mxf-Jh-ZC4">
+                            <color key="textColor" red="0.98823997173034905" green="0.98666968266239485" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                            <variation key="device=watch42mm" text="Z"/>
+                        </label>
+                        <button width="1" height="0.5" alignment="left" title="Button" id="W2a-h2-dak">
+                            <color key="backgroundColor" red="0.22405531949999999" green="0.75814361139999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <variation key="device=watch42mm" title="Done"/>
+                            <connections>
+                                <action selector="buttonPressed" destination="t30-64-T1N" id="0Bf-fi-Wm2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="3oQ-i8-sA7"/>
+                            <exclude reference="l5Z-tZ-6KL"/>
+                            <exclude reference="mxf-Jh-ZC4"/>
+                            <exclude reference="W2a-h2-dak"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="3oQ-i8-sA7"/>
+                            <include reference="l5Z-tZ-6KL"/>
+                            <include reference="mxf-Jh-ZC4"/>
+                            <include reference="W2a-h2-dak"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="labelX" destination="3oQ-i8-sA7" id="sA9-Pf-Bfu"/>
+                        <outlet property="labelY" destination="l5Z-tZ-6KL" id="3XP-3L-3jT"/>
+                        <outlet property="labelZ" destination="mxf-Jh-ZC4" id="gdN-Du-9KW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="545.74358974358984" y="177.41025641025641"/>
+        </scene>
+    </scenes>
+</document>
